@@ -1,0 +1,26 @@
+.call2action-top{
+    background-image: url("../img/background-top.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header, .h2-title{
+    border-bottom: #fab005 solid 0.2rem;
+}
+
+
+footer{
+    border-top: #fab005 solid 0.2rem;
+}
+
+footer a{
+    color: #fab005;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a:hover{
+    color: #f7cf07;
+}
+
