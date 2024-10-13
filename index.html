@@ -17,19 +17,35 @@
         <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                 <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-                    <!-- <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg> -->
                     <span class="me-2 fw-bold">JGM TI</span>
                 </a>
 
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="#" class="nav-link px-2 text-white">Home</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">Serviços</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">Sobre</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+                    <li><a href="index.html" class="nav-link px-2 text-white">Home</a></li>
+                    <li><a href="#servicos" class="nav-link px-2 text-white">Serviços</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">Contato</a></li>
+                    <!-- Modal de contato -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" style="color: black !important;">
+                        <div class="modal-content bg-light">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Entre em Contato</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p> E-mail: <a href="mailto:arte.jhonathan@gmail.com">arte.jhonathan@gmail.com</a></p>
+                            <p> Instagram: <a href="https://www.instagram.com/jhongmoreira" target="_blank">@jhongmoreira</a></p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                 </ul>
 
                 <div class="text-end">
-                    <button type="button" class="btn btn-warning">Restrito</button>
+                   <a href="https://jgmoreira.me/crm" target="_blank"><button type="button" class="btn btn-warning">Restrito</button></a>
                 </div>
             </div>
         </div>
@@ -42,44 +58,9 @@
             <div class="col-md-8 p-lg-5 mx-auto my-5">
               <h1 class="display-4 fw-normal">Destaque sua marca na Web</h1>
               <p class="lead fw-normal p-2">Seus clientes estão na Internet. Esteja você também.</p>
-              <a class="btn btn-warning" href="#">Saber mais</a>
+              <!-- <a class="btn btn-warning" href="#">Saber mais</a> -->
             </div>
-          </div>
-    
-          <!-- Destaques -->
-          <div class="row mb-2 p-3">
-
-            <div class="col-md-6">
-              <div class="row g-0 border overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                <div class="col p-4 d-flex flex-column position-static">
-                  <strong class="d-inline-block mb-2 text-primary">World</strong>
-                  <h3 class="mb-0">Featured post</h3>
-                  <div class="mb-1 text-muted">Nov 12</div>
-                  <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="stretched-link">Continue reading</a>
-                </div>
-                <div class="col-auto d-none d-lg-block">
-                  <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> 
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="row g-0 border overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                <div class="col p-4 d-flex flex-column position-static">
-                  <strong class="d-inline-block mb-2 text-success">Design</strong>
-                  <h3 class="mb-0">Post title</h3>
-                  <div class="mb-1 text-muted">Nov 11</div>
-                  <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="stretched-link">Continue reading</a>
-                </div>
-                <div class="col-auto d-none d-lg-block">
-                  <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                </div>
-              </div>
-            </div>
-
-        </div>
+          </div>    
 
         <!-- Preços -->
         <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
@@ -91,34 +72,32 @@
             <div class="col">
               <div class="card mb-4 shadow-sm border-dark">
                 <div class="card-header py-3 bg-dark text-white">
-                  <h4 class="my-0 fw-normal">Free</h4>
+                  <h4 class="my-0 fw-normal">Básico</h4>
                 </div>
                 <div class="card-body">
-                  <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mo</small></h1>
+                  <h1 class="card-title pricing-card-title">R$ 200,00<small class="text-muted fw-light">/mês</small></h1>
                   <ul class="list-unstyled mt-3 mb-4">
-                    <li>10 users included</li>
-                    <li>2 GB of storage</li>
-                    <li>Email support</li>
-                    <li>Help center access</li>
+                    <li>6 postagens</li>
+                    <li>Artes estáticas</li>
+                    <li>Contato por Whatsapp</li>
                   </ul>
-                  <button type="button" class="w-100 btn btn-lg btn-warning">Sign up for free</button>
+                  <!-- <button type="button" class="w-100 btn btn-lg btn-warning">Sign up for free</button> -->
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card mb-4  shadow-sm border-dark">
                 <div class="card-header py-3 bg-dark text-white">
-                  <h4 class="my-0 fw-normal">Pro</h4>
+                  <h4 class="my-0 fw-normal">Intermediário</h4>
                 </div>
                 <div class="card-body">
-                  <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/mo</small></h1>
+                  <h1 class="card-title pricing-card-title">R$ 300,00<small class="text-muted fw-light">/mês</small></h1>
                   <ul class="list-unstyled mt-3 mb-4">
-                    <li>20 users included</li>
-                    <li>10 GB of storage</li>
-                    <li>Priority email support</li>
-                    <li>Help center access</li>
+                    <li>8 postagens</li>
+                    <li>Artes diversas</li>
+                    <li>Contato por Whatsapp</li>
                   </ul>
-                  <button type="button" class="w-100 btn btn-lg btn-warning">Get started</button>
+                  <!-- <button type="button" class="w-100 btn btn-lg btn-warning">Get started</button> -->
                 </div>
               </div>
             </div>
@@ -128,48 +107,69 @@
                   <h4 class="my-0 fw-normal">Enterprise</h4>
                 </div>
                 <div class="card-body">
-                  <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small></h1>
+                  <h1 class="card-title pricing-card-title">R$ 450,00<small class="text-muted fw-light">/mês</small></h1>
                   <ul class="list-unstyled mt-3 mb-4">
-                    <li>30 users included</li>
-                    <li>15 GB of storage</li>
-                    <li>Phone and email support</li>
-                    <li>Help center access</li>
+                    <li>10 postagens</li>
+                    <li>Artes diversas</li>
+                    <li>Contato por Whatsapp</li>
                   </ul>
-                  <button type="button" class="w-100 btn btn-lg btn-warning">Contact us</button>
+                  <!-- <button type="button" class="w-100 btn btn-lg btn-warning">Contact us</button> -->
                 </div>
               </div>
             </div>
           </div>
 
           <!-- Tabela outros serviços -->
-          <h2 class="display-6 text-center mb-1 p-3">Outros Serviços</h2>
+          <h2 class="display-6 text-center mb-1 p-3" id="servicos">Outros Serviços</h2>
           <div class="table-responsive p-3">
             <table class="table text-center">
               <thead>
                 <tr>
-                  <th></th>
+                  <th>Serviços</th>
                   <th>Valor</th>
                 </tr>
               </thead>     
               <tbody>
                 <tr>
-                  <th scope="row" class="text-start">Permissions</th>
-                  <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                  <th scope="row" class="text-start">Formatação de Computador (sem backup)</th>
+                  <td>R$ 50,00</td>
                 </tr>
                 <tr>
-                  <th scope="row" class="text-start">Sharing</th>
-                  <td></td>
+                  <th scope="row" class="text-start">Formatação de Computador (com backup)</th>
+                  <td>R$ 60,00</td>
                 </tr>
                 <tr>
-                  <th scope="row" class="text-start">Unlimited members</th>
-                  <td></td>
+                  <th scope="row" class="text-start">Instalação de Software</th>
+                  <td>R$ 20,00</td>
                 </tr>
                 <tr>
-                  <th scope="row" class="text-start">Extra security</th>
-                  <td></td>
+                  <th scope="row" class="text-start">Verificação de Vírus</th>
+                  <td>R$ 15,00</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Cartões de Visita</th>
+                  <td>a partir de R$ 70,00</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Desenvolvimento de site</th>
+                  <td>Sob consulta</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Panfletos</th>
+                  <td>Sob consulta</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Cartaz</th>
+                  <td>Sob consulta</td>
                 </tr>
               </tbody>
             </table>
+          </div>
+
+          <div class="row p-3">
+            <div class="col-md-12 text-end">
+              <a href="/assets/pdf/tabela_valor.pdf" target="_blank"><button type="button" class="btn btn-warning">Baixar Tabela</button></a>              
+            </div>
           </div>
 
     </div>
